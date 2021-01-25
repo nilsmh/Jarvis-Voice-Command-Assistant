@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: pyspotify
+Version: 2.1.3
+Summary: Python wrapper for libspotify
+Home-page: https://pyspotify.readthedocs.io/
+Author: Stein Magnus Jodal
+Author-email: stein.magnus@jodal.no
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: cffi (>=1.0.0)
+Requires-Dist: setuptools
+Provides-Extra: dev
+Requires-Dist: invoke ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ; extra == 'dev'
+Requires-Dist: flake8-import-order ; extra == 'dev'
+Requires-Dist: isort[pyproject] ; extra == 'dev'
+Requires-Dist: delocate ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mock ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: check-manifest ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: flake8-bugbear ; extra == 'lint'
+Requires-Dist: flake8-import-order ; extra == 'lint'
+Requires-Dist: isort[pyproject] ; extra == 'lint'
+Provides-Extra: release
+Requires-Dist: delocate ; extra == 'release'
+Requires-Dist: twine ; extra == 'release'
+Requires-Dist: wheel ; extra == 'release'
+Provides-Extra: test
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+*********
+pyspotify
+*********
+
+pyspotify provides a Python interface to
+`Spotify's <https://www.spotify.com/>`__ online music streaming service.
+
+With pyspotify you can access music metadata, search in Spotify's library of
+20+ million tracks, manage your Spotify playlists, and play music from
+Spotify. All from your own Python applications.
+
+pyspotify uses `CFFI <https://cffi.readthedocs.org/>`_ to make a pure Python
+wrapper around the official libspotify library. It works on CPython 2.7 and
+3.5+, as well as PyPy 2.7 and 3.5+. It is known to work on Linux and
+macOS. Windows support should be possible, but is awaiting a contributor with
+the interest and knowledge to maintain it.
+
+
+libspotify's deprecation
+========================
+
+Note that as of May 2015 libspotify is officially deprecated by Spotify and is
+no longer actively maintained.
+
+Spotify has published newer libraries intended for Android and iOS development,
+as well as web APIs to access track metadata and manage playlists. Though, for
+making apps with Spotify playback capabilities, on any other platform than
+Android and iOS, there is currently no alternative to libspotify.
+
+libspotify has been the main way of integrating with Spotify since 2009, and is
+today a part of numerous open source projects and commercial applications,
+including many receivers and even cars. There's no guarantees, but one can hope
+that the large deployment of libspotify means that the library will continue to
+work with the Spotify service for a long time into the future.
+
+
+Project resources
+=================
+
+- `Documentation <https://pyspotify.readthedocs.io/>`_
+- `Source code <https://github.com/jodal/pyspotify>`_
+- `Issue tracker <https://github.com/jodal/pyspotify/issues>`_
+
+.. image:: https://img.shields.io/pypi/v/pyspotify
+    :target: https://pypi.org/project/pyspotify/
+    :alt: Latest PyPI version
+
+.. image:: https://img.shields.io/circleci/build/gh/jodal/pyspotify
+    :target: https://circleci.com/gh/jodal/pyspotify
+    :alt: CircleCI build status
+
+.. image:: https://img.shields.io/codecov/c/gh/jodal/pyspotify
+   :target: https://codecov.io/gh/jodal/pyspotify
+   :alt: Test coverage
+
+
